@@ -13,4 +13,8 @@ ecdm_token = res.json()["x-auth-token"]
 
 # get tenants
 res = ecdm.get_tenants(ecdm_token)
+
+# Create vCenter creds
+res = ecdm.create_creds(ecdm_token)
+print res.status_code
 print res.json()
